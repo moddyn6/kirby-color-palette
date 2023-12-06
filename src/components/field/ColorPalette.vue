@@ -4,7 +4,6 @@
             <k-button v-if="extractor" ref="extract" :id="_uid" icon="palette-pipette" @click="openSelector">
                 {{ $t('palette.new.palette') }}
             </k-button>
-            <k-files-dialog ref="selector" @submit="processImage" />
         </template>
 
         <k-box v-if="emptyOptions" theme="info" class="color-palette_empty-options">
